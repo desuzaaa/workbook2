@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div id="messageDiv">Enter your name here</div>
+      <input id="nameInput" type="text" value="" placeholder="enter your name" />
+    </main>
+    <footer></footer>
+    <script>
+      "use strict";
+      let messageDiv = document.getElementById("messageDiv");
+      console.log(messageDiv);
+
+      let nameInput = document.getElementById("nameInput");
+      console.log(nameInput);
+
+      messageDiv.innerText = "Oi";
+
+      nameInput.value = "Person";
+
+      let currentMessage = messageDiv.innerText;
+      console.log(currentMessage);
+
+      let currentName = nameInput.value;
+      console.log(currentName);
+    </script>
+  </body>
+</html>

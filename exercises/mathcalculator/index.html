@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Calculator</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form class="container border">
+        <div class="number1">
+          <label for="number1" class="form-label">Number 1</label>
+          <input type="text" class="form-control" id="number1" />
+        </div>
+        <div class="number2">
+          <label for="number2" class="form-label">Number 2</label>
+          <input type="text" class="form-control" id="number2" />
+        </div>
+        <div id="key">
+          <label for="answer" class="form-label">Answer</label>
+          <input type="text" class="form-control" id="answer" readonly />
+        </div>
+        <div class="buttons">
+          <button onclick="add()" type="button" id="addnum">Add</button>
+          <button type="button" id="subtractnum">Subtract</button>
+          <button type="button" id="multiplynum">Multiply</button>
+          <button type="button" id="divisonnum">Divide</button>
+        </div>
+      </form>
+      <script>
+        "use strict";
+        let number1 = document.getElementById("number1");
+        console.log(number1);
+
+        let number2 = document.getElementById("number2");
+        console.log(number2);
+
+        let key = document.getElementById("key");
+        console.log(key);
+
+        function add() {
+          let number1 = Number(number1.value);
+
+          let number2 = Number(number2.value);
+
+          let answer = number1 + number2;
+          console.log(answer);
+
+          key.value = answer;
+        }
+      </script>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
